@@ -1,0 +1,31 @@
+﻿<div style="min-width: 240px; margin-top: 15px; margin-left: 5px;">
+    <form>
+        <div>
+            <label style="margin-right: 15px;">Логін:</label>
+            <input type="text"/>
+        </div>
+        <div>
+            <label>Пароль:</label>
+            <input type="password"/>
+        </div>
+        <input type="button" value="Увійти" onclick="alert('Невірни логін чи пароль')"/>
+    </form>
+    @Html.Partial("Devider")
+
+    <form>
+        <div>
+            <label>Соціальний опит</label>
+            <label>Ви програмуєте з використанням .Net технологій?</label>
+        </div>
+        <div>
+            <label>Так</label>
+            <input type="radio" name="question"/>
+        </div>
+        <div>
+            <label>Ні</label>
+            <input type="radio" name="question"/>
+        </div>
+        <input type="button" value="Проголосувати" onclick="alert('Дякуємо за вашу відповідь')"/>
+    </form>
+    @Html.Partial("Devider")
+</div>

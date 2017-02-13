@@ -1,0 +1,66 @@
+﻿@using InternetLabs.App_Data
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Котенко Денис</title>
+    @Styles.Render("~/Content/css")
+    <link href="@Href("../../Content/font-awesome.css")" rel="stylesheet">
+</head>
+<body>
+    @Html.Partial("Header")
+
+    <div style="display: flex;">
+        <div style="min-width: 200px; margin-right: 6px;">
+            <div style="background: #00BCD4; height: 15px;"></div>
+            <div class="menu">
+                <div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <a href="@Url.Action("Index", "Home")">Домашня сторінка</a>
+                </div>
+                <div>
+                    <i class="fa fa-folder-open" aria-hidden="true"></i>
+                    <a href="@Url.Action("HtmlBlock", "Home")">Html</a>
+                </div>
+                <div>
+                    <i class="fa fa-clone" aria-hidden="true"></i>
+                    <a href="@Url.Action("Lab1", "Home")">Лр. №1 Форматування</a>
+                </div>
+                <div>
+                    <i class="fa fa-clone" aria-hidden="true"></i>
+                    <a href="@Url.Action("Lab2", "Home")">Лабораторна №2</a>
+                </div>
+                <div>
+                    <i class="fa fa-clone" aria-hidden="true"></i>
+                    <a href="@Url.Action("Lab3", "Home")">Лабораторна №3</a>
+                </div>
+            </div>
+
+            @*<ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Домашня сторінка</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Lab1", "Home")">Лабораторна №1</a>
+                </li>
+            </ul>*@
+            <div style="background: #0097A7; width: 10px;"></div>
+        </div>
+        <div style="width: 100%;">
+            @RenderBody()
+        </div>
+        <div>
+            @Html.Partial("RightBar")
+        </div>
+    </div>
+
+    <footer>
+        <hr/>
+        <p>&copy; @DateTime.Now.Year - Denys Kotenko</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
