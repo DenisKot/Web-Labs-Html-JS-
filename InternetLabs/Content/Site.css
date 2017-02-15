@@ -50,3 +50,14 @@ textarea {
     margin-top: 4px;
     margin-left: 6px;
 }
+
+.mytable {
+    border-color: ghostwhite;
+    border-width: 2px;
+}
+
+.mytable td {
+    width: 33%;
+    max-height: 300px;
+    padding: 10px;
+}

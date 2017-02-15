@@ -7,12 +7,13 @@
     <title>@ViewBag.Title - Котенко Денис</title>
     @Styles.Render("~/Content/css")
     <link href="@Href("../../Content/font-awesome.css")" rel="stylesheet">
+    <link href="@Href("../../Content/lab3.css")" rel="stylesheet">
 </head>
 <body>
     @Html.Partial("Header")
 
     <div style="display: flex;">
-        <div style="min-width: 200px; margin-right: 6px;">
+        <div style="min-width: 260px; margin-right: 6px;">
             <div style="background: #00BCD4; height: 15px;"></div>
             <div class="menu">
                 <div>
@@ -25,15 +26,15 @@
                 </div>
                 <div>
                     <i class="fa fa-clone" aria-hidden="true"></i>
-                    <a href="@Url.Action("Lab1", "Home")">Лр. №1 Форматування</a>
+                    <a href="@Url.Action("Lab1", "Home")">Лр. №1 Мова HRML. Фрейми</a>
                 </div>
                 <div>
                     <i class="fa fa-clone" aria-hidden="true"></i>
-                    <a href="@Url.Action("Lab2", "Home")">Лабораторна №2</a>
+                    <a href="@Url.Action("Lab2", "Home")">Лр. №2 Таблиці</a>
                 </div>
                 <div>
                     <i class="fa fa-clone" aria-hidden="true"></i>
-                    <a href="@Url.Action("Lab3", "Home")">Лабораторна №3</a>
+                    <a href="@Url.Action("Lab3", "Home")">Лр. №3 Каскадні таблиці стилів</a>
                 </div>
             </div>
 

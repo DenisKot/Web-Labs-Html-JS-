@@ -1,0 +1,24 @@
+﻿.mainTitle {
+    text-align: center;
+}
+
+.bigText {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.greenText {
+    color: green;
+}
+
+.verdena {
+    font-family: verdena;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right {
+    text-align: right;
+}
