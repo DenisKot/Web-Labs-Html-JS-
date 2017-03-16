@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ArrayOfEmployee>
+  <Employee>
+    <PersonID>12</PersonID>
+    <UserLogin>hq\d.kotenko</UserLogin>
+    <Email>d.kotenko@gng.com.ua</Email>
+    <Surname>Котенко</Surname>
+    <Name>Денис</Name>
+    <MiddleName>Валентинович</MiddleName>
+    <Position>Розробник програмного забезпечення</Position>
+    <UnitID>4</UnitID>
+    <ChangeDate>2017-07-06T11:35:25.6800000-07:00</ChangeDate>
+  </Employee>
+  <Employee>
+    <PersonID>1</PersonID>
+    <UserLogin>hq\r.vavrik</UserLogin>
+    <Email>r.vavrik@gng.com.ua</Email>
+    <Surname>Ваврик</Surname>
+    <Name>Роман</Name>
+    <MiddleName>Петрович</MiddleName>
+    <Position>Директор департаменту юридичних питань</Position>
+    <UnitID>2</UnitID>
+    <ChangeDate>2017-07-06T11:35:25.6800000-07:00</ChangeDate> 
+  </Employee>
+  <Employee>
+    <PersonID>2</PersonID>
+    <UserLogin>hq\v.nesmashnyy</UserLogin>
+    <Email>v.nesmashnyy@gng.com.ua</Email>
+    <Surname>Несмашний</Surname>
+    <Name>Валерій </Name>
+    <MiddleName/>
+    <Position>Директор департаменту ІТ</Position>
+    <UnitID>4</UnitID>
+    <ChangeDate>2017-07-06T11:35:25.6800000-07:00</ChangeDate>
+  </Employee>
+  <Employee>
+    <PersonID>3</PersonID>
+    <UserLogin>hq\e.belfer</UserLogin>
+    <Email>e.belfer@gng.com.ua</Email>
+    <Surname>Бельфер</Surname>
+    <Name>Євген</Name>
+    <MiddleName/>
+    <Position>Розробник відділу розробки департаменту ІТ</Position>
+    <UnitID>5</UnitID>
+    <ChangeDate>2017-07-06T11:35:25.6800000-07:00</ChangeDate>
+  </Employee>
+  <Employee>
+    <PersonID>4</PersonID>
+    <UserLogin>hq\a.orekhovskyi</UserLogin>
+    <Email>a.orekhovskyi@gng.com.ua</Email>
+    <Surname>Ореховський</Surname>
+    <Name>Андрій</Name>
+    <MiddleName/>
+    <Position>Керівник відділу розробки департаменту ІТ</Position>
+    <UnitID>5</UnitID>
+    <ChangeDate>2017-07-06T11:35:25.6800000-07:00</ChangeDate>
+  </Employee>
+  <Employee>
+    <PersonID>5</PersonID>
+    <UserLogin>hq\m.obadina</UserLogin>
+    <Email>m.obadina@gng.com.ua</Email>
+    <Surname>Обадіна</Surname>
+    <Name>Марина</Name>
+    <MiddleName/>
+    <Position>Менеджер відділу тестування департаменту ІТ</Position>
+    <UnitID>6</UnitID>
+    <ChangeDate>2017-07-06T11:35:25.6800000-07:00</ChangeDate>
+  </Employee>
+  <Employee>
+    <PersonID>6</PersonID>
+    <UserLogin>hq\v.korrel</UserLogin>
+    <Email>v.korrel@gng.com.ua</Email>
+    <Surname>Коррель</Surname>
+    <Name>Вадим</Name>
+    <MiddleName/>
+    <Position>Менеджер конфігурації ТОВ Елеганс</Position>
+    <UnitID>1</UnitID>
+    <ChangeDate>2017-07-06T11:35:25.6800000-07:00</ChangeDate>
+  </Employee>
+  <Employee>
+    <PersonID>7</PersonID>
+    <UserLogin>hq\d.tanko</UserLogin>
+    <Email>d.tanko@gng.com.ua</Email>
+    <Surname>Танько</Surname>
+    <Name>Дмитро</Name>
+    <MiddleName/>
+    <Position>Експерт відділу експертизи департаменту юридичних питань</Position>
+    <UnitID>3</UnitID>
+    <ChangeDate>2017-07-06T11:35:25.6800000-07:00</ChangeDate>
+  </Employee>
+  <Employee>
+    <PersonID>8</PersonID>
+    <UserLogin>hq\d.sazonov</UserLogin>
+    <Email>d.sazonov@gng.com.ua</Email>
+    <Surname>Сазонов</Surname>
+    <Name>Дмитро</Name>
+    <MiddleName/>
+    <Position>Експерт відділу експертизи департаменту юридичних питань</Position>
+    <UnitID>3</UnitID>
+    <ChangeDate>2017-07-06T11:35:25.6800000-07:00</ChangeDate>
+  </Employee>
+</ArrayOfEmployee>
+

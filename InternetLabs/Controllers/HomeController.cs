@@ -32,5 +32,21 @@ namespace InternetLabs.Controllers
         {
             return View();
         }
+
+        public ActionResult Lab4()
+        {
+            return View();
+        }
+
+        public ActionResult Lab5()
+        {
+            return View();
+        }
+        
+
+        public ActionResult JsLab1()
+        {
+            return View();
+        }
     }
 }

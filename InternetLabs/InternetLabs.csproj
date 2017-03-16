@@ -171,6 +171,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Resources\csharpmini.jpg" />
     <Content Include="Resources\domains.jpg" />
+    <Content Include="Resources\employee.xml" />
     <Content Include="Resources\logo.png" />
     <Content Include="Resources\pic.jpg" />
     <Content Include="Resources\pic1%28cut%29.jpg" />
@@ -185,6 +186,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="Resources\EDOC_Calendar.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -193,6 +195,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\labs.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -216,6 +219,9 @@
     <Content Include="Views\Shared\RightBar.cshtml" />
     <Content Include="Views\Shared\Devider.cshtml" />
     <Content Include="Views\Home\htmlBlock.cshtml" />
+    <Content Include="Views\Home\lab5.cshtml" />
+    <Content Include="Views\Home\lab4.cshtml" />
+    <Content Include="Views\Home\jslab1.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
