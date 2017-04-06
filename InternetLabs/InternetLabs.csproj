@@ -169,6 +169,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Resources\circle.png" />
     <Content Include="Resources\csharpmini.jpg" />
     <Content Include="Resources\domains.jpg" />
     <Content Include="Resources\employee.xml" />
@@ -179,6 +180,8 @@
     <Content Include="Resources\pic2.png" />
     <Content Include="Resources\pic3.jpg" />
     <Content Include="Resources\pic4.jpg" />
+    <Content Include="Resources\square.jpg" />
+    <Content Include="Resources\traingle.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\FontAwesome.otf" />
@@ -195,6 +198,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lab3.js" />
     <Content Include="Scripts\lab2.js" />
     <Content Include="Scripts\labs.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
@@ -224,6 +228,7 @@
     <Content Include="Views\Home\lab4.cshtml" />
     <Content Include="Views\Home\jslab1.cshtml" />
     <Content Include="Views\Home\jslab2.cshtml" />
+    <Content Include="Views\Home\jslab3.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
