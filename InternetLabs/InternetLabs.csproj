@@ -198,6 +198,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lab4.js" />
     <Content Include="Scripts\lab3.js" />
     <Content Include="Scripts\lab2.js" />
     <Content Include="Scripts\labs.js" />
@@ -229,6 +230,7 @@
     <Content Include="Views\Home\jslab1.cshtml" />
     <Content Include="Views\Home\jslab2.cshtml" />
     <Content Include="Views\Home\jslab3.cshtml" />
+    <Content Include="Views\Home\jslab4.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

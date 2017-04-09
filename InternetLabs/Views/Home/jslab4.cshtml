@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Лабораторна №3. Події";
+}
+
+<div>
+    <h1 align="center">Події</h1>
+
+    <p><b>Практическое задание №1</b>
+    </p>
+
+    <div style="text-align: center;">
+        <h3>Слайд-шоу</h3>
+        <img id="slide" src="../../Resources/pic.jpg" style="height: 100px;"/>
+        <br/>
+        <button onclick="show(-1);">
+            Предыдущий слайд
+        </button>
+        <button onclick="show(+1);">
+            Следующий слайд
+        </button>
+    </div>
+
+    <img src="../../Resources/pic3.jpg"
+         alt="Фото: Спортсмены на беговой дорожке."
+         onmouseover="this.setAttribute('src', '../../Resources/pic4.jpg');"
+         onmouseout="this.setAttribute('src', '../../Resources/pic3.jpg');"/>
+    <span id="globe" style="font-family: webdings, symbol; position: absolute;">&#254;</span>
+    
+    <h1 onmousemove="showTooltip();"
+        onmouseover="document.getElementById('tooltip').style.visibility = 'visible';"
+        onmouseout="document.getElementById('tooltip').style.visibility = 'hidden';">
+        ECMAScript и DOM
+    </h1>
+    <span id="tooltip" style="visibility: hidden; position: absolute;">Подсказка.</span>
+    
+
+    <h1 align="center">Завдання</h1>
+    <span>Status bar: </span><span id="statusbarid"></span>
+    <div><span>Traingle position: </span><span id="statusbarTraingleid"></span></div>
+    <div><span>Circle position: </span><span id="statusbarCircleid"></span></div>
+    <div><span>Square position: </span><span id="statusbarSquareid"></span></div>
+    <div><button onclick="movefigures()">Move</button><button onclick="pausefigures()">Pause</button><button onclick="resetfigures()">Reset</button></div>
+    <div id="imgContainer" style="position: relative; height: 600px; width: 100%; background: ghostwhite;">
+        <img id="figure1" src="../../Resources/traingle.png"
+             style="position: absolute; max-width: 120px; left: 0px; top: 450px;"
+             onmouseenter="showElPosition('Треугольник, наведена мишь, позиция ', this)"
+             ondblclick="traingleMove()"/>
+
+        <img id="figure2" src="../../Resources/square.jpg" 
+             style="position: absolute; max-width: 120px; top: 429px; left: 346px;"
+             onmouseenter="showElPosition('Квадрат, наведена мишь, позиция ', this)"
+             ondblclick="squearMove()" />
+
+        <img id="figure3" src="../../Resources/circle.png" 
+             style="position: absolute; max-width: 120px; top: 5px; left: 60px;"
+             onmouseenter="showElPosition('Круг, наведена мишь, позиция ', this)"
+             ondblclick="circleMove()" />
+    </div>
+</div>
