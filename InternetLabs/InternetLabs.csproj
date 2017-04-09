@@ -191,6 +191,8 @@
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Resources\EDOC_Calendar.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Resources\detail.html" />
+    <Content Include="Resources\list.html" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -198,6 +200,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lab5.js" />
     <Content Include="Scripts\lab4.js" />
     <Content Include="Scripts\lab3.js" />
     <Content Include="Scripts\lab2.js" />
@@ -231,6 +234,7 @@
     <Content Include="Views\Home\jslab2.cshtml" />
     <Content Include="Views\Home\jslab3.cshtml" />
     <Content Include="Views\Home\jslab4.cshtml" />
+    <Content Include="Views\Home\jslab5.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

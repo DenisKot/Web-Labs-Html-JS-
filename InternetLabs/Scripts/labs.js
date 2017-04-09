@@ -515,6 +515,10 @@ function updateFigures() {
 }
 
 
+
+/////////// lab 5
+
+
 window.onload = function () {
     //// lab 2
     createCalendar();

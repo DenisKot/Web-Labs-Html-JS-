@@ -1,0 +1,26 @@
+﻿<input type="text" ng-model="projectList.search" class="search-query" id="projects_search"
+       placeholder="Search">
+<table>
+    <thead>
+        <tr>
+            <th>Номер маршрута</th>
+            <th>Название начального пункта</th>
+            <th>Название конечного пункта</th>
+            <th>Длительность поездки</th>
+            <th>Фамилия главного машиниста</th>
+            <th><a href="#/new">Add<i class="icon-plus-sign"></i></a></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="project in projectList.projects | filter:projectList.search | orderBy:'number'">
+            <td>{{project.number}}</td>
+            <td>{{project.depature}}</td>
+            <td>{{project.destination}}</td>
+            <td>{{project.time}}</td>
+            <td>{{project.machinist}}</td>
+            <td>
+                <a ng-href="#/edit/{{project.$id}}">Edit<i class="icon-pencil"></i></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
