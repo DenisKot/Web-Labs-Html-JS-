@@ -122,6 +122,7 @@ function createCalendar() {
     var today = now.getDate();   // Узнаём число. 
 
     var html = '<table class="myCalendar" border="1"><thead><tr><th>пн</th><th>вв</th><th>ср</th><th>чт</th><th>пт</th><th style="color: darkorange;">сб</th><th style="color: darkorange;">нд</th></tr></thead><tbody>';
+    var item = 0;
     for (var i = 2 - dayOfWeek; i <= 43 - dayOfWeek; i++) {   // Цикл, который будет заполнять таблицу. 
         if ((i - 1 + dayOfWeek) % 7 == 1)
             html += '<tr>';//Открываем тег элемента ‹tr›. 
@@ -135,8 +136,8 @@ function createCalendar() {
                 if (i <= 0)
                     html += '<td style="color: darkgray;">' + (28 - i) + '<\/td>'; // Выводим ячейку календаря на текущий месяц. 
                 else {
-                    var inWeek = i % 7;
-                    if (inWeek == 5 || inWeek == 4)
+                    var inWeek = item % 7;
+                    if (inWeek == 5 || inWeek == 6)
                         html += '<td style="color: darkorange;">' + i + '<\/td>';   // Выводим ячейку календаря на текущий месяц. 
                     else
                         html += '<td>' + i + '<\/td>';   // Выводим ячейку календаря на текущий месяц. 
@@ -146,6 +147,7 @@ function createCalendar() {
 
         if ((i - 1 + dayOfWeek) % 7 == 0)
             html += '<\/tr>';//Открываем тег элемента ‹tr›. 
+        item++;
     }
     html += '<\/tbody><\/table>';//Закрываем теги элементов ‹table› и ‹tbody›. 
 
@@ -179,27 +181,27 @@ var CMSize = CTSize * 0.7; //Длинна минутной стрелки
 var CSSize = CTSize * 0.8; //Длинна секундной стрелки
 var CHSize = CTSize * 0.6; //Длинна часовой стрелки
 var example;
-var ctx;
+var canvasContext;
 
 function ctxline(x1, y1, len, angle, color, wid) {//Функция рисования линии под углом
     var x2 = (CCenter + (len * Math.cos(angle)));
     var y2 = (CCenter + (len * Math.sin(angle)));
-    ctx.beginPath();
-    ctx.strokeStyle = color;
-    ctx.lineWidth = wid;
-    ctx.moveTo(x1, y1);
-    ctx.lineTo(x2, y2);
-    ctx.stroke();
+    canvasContext.beginPath();
+    canvasContext.strokeStyle = color;
+    canvasContext.lineWidth = wid;
+    canvasContext.moveTo(x1, y1);
+    canvasContext.lineTo(x2, y2);
+    canvasContext.stroke();
 }
 
 function ctxcircle(x, y, rd, color) {//Функция рисования круга
-    ctx.beginPath();
-    ctx.arc(x, y, rd, 0, 2 * Math.PI, false);
-    ctx.fillStyle = color;
-    ctx.fill();
-    ctx.lineWidth = 1;
-    ctx.strokeStyle = color;
-    ctx.stroke();
+    canvasContext.beginPath();
+    canvasContext.arc(x, y, rd, 0, 2 * Math.PI, false);
+    canvasContext.fillStyle = color;
+    canvasContext.fill();
+    canvasContext.lineWidth = 1;
+    canvasContext.strokeStyle = color;
+    canvasContext.stroke();
 }
 
 function tick() { //Функция рисования стрелок 
@@ -220,36 +222,13 @@ function tick() { //Функция рисования стрелок
 
     ctxcircle(CCenter, CCenter, 6, CSeconds);//Круг от секундной стрелки 
 }
-//window.onload = function () {
-//    createCalendar();
-//    createMultTable();
-
-//    if (!document.getElementById("clockCanvas")) return;
-
-//    example = document.getElementById("clockCanvas"),
-//        ctx = example.getContext('2d');
-//    ctx.fillStyle = CBackground;
-//    ctx.fillRect(0, 0, example.width, example.height);
-
-//    for (var iv = 0; iv < 12; iv++) {// Рисуем часовые метки
-//        i = 360 / 12 * iv;
-//        ctxcircle((CCenter + (CTSize * Math.cos((i - 90) / 180 * Math.PI))), (CCenter + (CTSize * Math.sin((i - 90) / 180 * Math.PI))), 5, CColor);
-//    }
-
-//    for (var iv2 = 0; iv2 < 60; iv2++) {// Рисуем минутные метки
-//        i = 360 / 60 * iv2;
-//        ctxcircle((CCenter + (CTSize * Math.cos((i - 90) / 180 * Math.PI))), (CCenter + (CTSize * Math.sin((i - 90) / 180 * Math.PI))), 2, CColor);
-//    }
-
-//    setInterval('tick(); ', 10);
-//}
 
 
 
 
 /////////// lab 3
 
-var status = 'Текст строки состояния';   // Записываем текст в строку состояния. 
+var status = 'Лабораторна №4 Анімація';   // Записываем текст в строку состояния. 
 var initLenght = status.length;
 var statusBarTimer;
 var toRight = true;
@@ -378,8 +357,8 @@ var distPos = 28;
 
 function track() {
     if (!document.getElementById('globe')) return;
-    mouseX = event.clientX;
-    mouseY = event.clientY;
+    mouseX = event.pageX;
+    mouseY = event.pageY;
 }
 
 function moveGlobe() {
@@ -387,7 +366,7 @@ function moveGlobe() {
     if (!el)return;
     pos += 0.01;
     el.style.left = mouseX - 2 + distPos * Math.cos(pos) + 'px';   // Меняем координаты. 
-    el.style.top = mouseY + 7 + distPos * Math.sin(pos) + 'px';   // Меняем координаты. 
+    el.style.top = mouseY + 6 + distPos * Math.sin(pos) + 'px';   // Меняем координаты. 
 }
 
 var trAngle = -1;
@@ -527,9 +506,9 @@ window.onload = function () {
     if (!document.getElementById("clockCanvas")) return;
 
     example = document.getElementById("clockCanvas"),
-        ctx = example.getContext('2d');
-    ctx.fillStyle = CBackground;
-    ctx.fillRect(0, 0, example.width, example.height);
+        canvasContext= example.getContext('2d');
+    canvasContext.fillStyle = CBackground;
+    canvasContext.fillRect(0, 0, example.width, example.height);
 
     for (var iv = 0; iv < 12; iv++) {// Рисуем часовые метки
         i = 360 / 12 * iv;

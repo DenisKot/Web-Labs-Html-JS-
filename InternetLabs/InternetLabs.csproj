@@ -235,6 +235,7 @@
     <Content Include="Views\Home\jslab3.cshtml" />
     <Content Include="Views\Home\jslab4.cshtml" />
     <Content Include="Views\Home\jslab5.cshtml" />
+    <Content Include="Views\Home\game.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
